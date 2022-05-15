@@ -1,0 +1,461 @@
+:root {
+    --blue: #3366cc;
+    --black: #000000;
+    --dark: #54595d;
+    --withe: #f9fafe;
+    --sm: 1.3rem;
+    --md: 1.4rem;
+    --lg: 1.6rem;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+li {
+    list-style: none;
+}
+header {
+    display: flex;
+    margin-top: 48px;
+    margin-bottom: 8px;
+    justify-content: center;
+}
+header .header-logo-container {
+    width: 156px;
+    height: 48px;
+}
+header div img {
+    width: 156px;
+}
+header h1 {
+    margin: 0;
+    font-size: var(--md);
+    font-weight: 400;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .main-language-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 525px;
+    height: 325px;
+    justify-items: center;
+    gap: 24px;
+    align-self: center;
+    background-image: url(https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@1.5x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+}
+main .main-language-container div {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+main .main-language-container div:hover {
+    background-color: #eaecf0;
+}
+main .main-language-container div:nth-child(1) {
+    left: 60px;
+    top: 10px;
+}
+main .main-language-container div:nth-child(2) {
+    right: 60px;
+    top: 10px;
+}
+main .main-language-container div:nth-child(3) {
+    left: 10px;
+    top: 75px;
+}
+main .main-language-container div:nth-child(4) {
+    right: 10px;
+    top: 75px;
+}
+main .main-language-container div:nth-child(5) {
+    left: 0px;
+    top: 135px;
+}
+main .main-language-container div:nth-child(6) {
+    right: 0px;
+    top: 135px;
+}
+main .main-language-container div:nth-child(7) {
+    left: 10px;
+    top: 200px;
+}
+main .main-language-container div:nth-child(8) {
+    right: 10px;
+    top: 200px;
+}
+main .main-language-container div:nth-child(9) {
+    left: 60px;
+    top: 265px;
+}
+main .main-language-container div:nth-child(10) {
+    right: 60px;
+    top: 265px;
+}
+main .main-language-container div a small{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: var(--sm);
+    color: var(--dark);
+}
+main .main-language-container div a strong {
+    font-size: var(--lg);
+    color: var(--blue);
+}
+main .main-search {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+main .main-search .main-search-container {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+}
+main .main-search-container input {
+    width: 420px;
+    height: 45px;
+    padding-right: 50px;
+    padding-left: 10px;
+    border-width: 1px 0 1px 1px;
+    font-size: var(--md);
+}
+main .main-search-container input:focus {
+    border-color: #36c;
+    box-shadow: inset 0 0 0 1px #36c;
+    outline: 0;
+}
+main .main-search-container .language-options {
+    position: absolute;
+    margin-right: 12px;
+}
+main .language-options label {
+    font-size: var(--sm);
+}
+main .language-options select {
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+main .language-options select:focus-visible {
+    width: 150px;
+    height: 50px;
+}
+main .main-search button {
+    width: 56px;
+    height: 45px;
+    background-color: var(--blue);
+    border: none;
+    cursor: pointer;
+}
+main .main-search button:hover {
+    background: #447ff5;
+    border-color: #447ff5;
+}
+main .main-search button:focus {
+    box-shadow: 0 0 0 1px #36c;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+main section .main-search .main-button-search {
+    color: var(--withe);
+}
+main .main-language-button {
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+main .main-language-button .language-button-container {
+    display: flex;
+    justify-content: center;
+}
+main .main-language-button .language-button-container .language-button {
+    display: flex;
+    width: 300px;
+    height: 36px;
+    color: var(--blue);
+    font-size: var(--md);
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    font-weight: bold;
+    align-items: center;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+}
+main .main-language-button .language-button-container .language-button:hover {
+    background-color: #fff;
+    border-color: #a2a9b1;
+}
+main .main-language-button .language-button-container .language-button:focus {
+    border-color: #36c;
+    box-shadow: inset 0 0 0 1px #36c;
+}
+main .main-language-button .language-button-container .language-button 
+.tranalate {
+    margin-right: 8px;
+}
+main .main-language-button .language-button-container .language-button 
+.arrow-expand {
+    margin-left: 4px;
+}
+main .main-language-button .main-border-datail {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    top: -20px;
+    gap: 350px;
+}
+main .main-language-button .main-border-datail div:nth-child(1) {
+    border-bottom: 1px solid #c8ccd1;
+    position: relative;
+    width: 60px;
+}
+main .main-language-button .main-border-datail div:nth-child(2) {
+    border-bottom: 1px solid #c8ccd1;
+    position: relative;
+    width: 60px;
+}
+main hr {
+    border: 0;
+    border-bottom: 1px solid #c8ccd1;
+    clear: both;
+    margin: 3.6rem 0.8rem;
+}
+footer .footer--primary-wraper {
+    display: flex;
+}
+footer .footer--primary-wraper .footer--left {
+    display: flex;
+    justify-content: center;
+    
+}
+footer .footer-sidebar-container {
+    height: 450px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+footer .footer--primary-wraper .footer--left .sidebar-hosted {
+    display: flex;
+    width: 350px;
+    height: 100px;
+}
+.sidebar-hosted .sidebar-icon-wraper {
+    width: 42px;
+    padding: 0 12px;
+}
+/* aqui encontramos el svg de los iconos y los estilos prinsipales */
+.icons-svg {
+    background-image: linear-gradient(transparent, transparent),
+    url(https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-e99844f6.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+footer .sidebar-hosted .svg-Wikimedia-logo_black {
+    background-position: 0 -212px;
+    width: 42px;
+    height: 42px;
+    margin-top: 12px;
+}
+.sidebar-hosted .sidebar-text p {
+    margin-block-end: 2px;
+}
+.sidebar-hosted .sidebar-text p, a {
+    font-size: var(--md);
+}
+.sidebar-text a span {
+    color: var(--blue);
+}
+.sidebar-text a span:hover {
+    text-decoration: underline;
+}
+footer .sidebar-mobileApp {
+    display: flex;
+    width: 350px;
+    height: 200px;
+    margin-top: 36px;
+    background-color: #f8f9fa;
+    align-items: center;
+}
+.sidebar-mobileApp .sidebar-mobileApp-wraper {
+    display: flex;
+    padding: 12px;
+    height: 170px;
+    justify-items: flex-start;
+}
+.sidebar-mobileApp-wraper .svg-Wikimedia_app_title {
+    background-position: 0 -719px;
+    width: 42px;
+    height: 42px;
+}
+.sidebar-mobileApp .mobileApp-text {
+    padding-right: 12px;
+}
+.sidebar-mobileApp .mobileApp-text .mobileApp-a {
+    font-size: var(--md);
+    color: var(--blue);
+    font-weight: bold;
+}
+.sidebar-mobileApp .mobileApp-text .mobileApp-a:hover {
+    text-decoration: underline;
+}
+.sidebar-mobileApp .mobileApp-text p {
+    font-size: var(--md);
+}
+.mobileApp-buttons {
+    display: flex;
+    padding-inline-start: 0;
+    gap: 4px;
+}
+.mobileApp-buttons a {
+    color: transparent;
+}
+.sidebar-mobileApp .mobileApp-text ul li a .googlePlay-button {
+    background-position: 0 -541px;
+    width: 124px;
+    height: 38px;
+}
+.sidebar-mobileApp .mobileApp-text ul li a .appStore-button {
+    background-position: 0 -579px;
+    width: 110px;
+    height: 38px;
+}
+footer .footer--primary-wraper .footer--right {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+}
+footer .footer--primary-wraper .footer--right a {
+    display: flex;
+    width: 250px;
+    height: 80px;
+    cursor: pointer;
+    place-items: center;
+    padding: 12px 24px 12px 12px;
+}
+footer .footer--primary-wraper .footer--right a:hover {
+    background-color: #eaecf0;
+}
+footer .footer--primary-wraper .footer--right .other-projects-icon {
+    display: contents;
+    width: 36px;
+    height: 36px;
+}
+.Commons-logo {
+    background-position: 0 0;
+    width: 47px;
+    height: 47px;
+}
+.footer--primary-wraper .footer--right .other-projects-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+.other-projects-text strong {
+    font-size: var(--md);
+    color: var(--blue);
+    font-weight: 400;
+}
+.other-projects-text span {
+    font-size: var(--md);
+}
+.Wikivoyage-logo {
+    background-position: 0 -446px;
+    width: 36px;
+    height: 36px;
+}
+.Wiktionary-logo {
+    background-position: 0 -482px;
+    width: 37px;
+    height: 37px;
+}
+.Wikibooks-logo {
+    background-position: 0 -126px;
+    width: 37px;
+    height: 37px;
+}
+.Wikinews-logo {
+    background-image: url(https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikinews-logo_sister.png);
+    background-position: 0 0;
+    background-size: 47px 26px;
+    width: 47px;
+    height: 26px;
+}
+.Wikidata-logo {
+    background-position: 0 -163px;
+    width: 49px;
+    height: 49px;
+}
+.Wikiversity-logo {
+    background-position: 0 -409px;
+    width: 43px;
+    height: 37px;
+}
+.Wikiquote-logo {
+    background-position: 0 -286px;
+    width: 42px;
+    height: 42px;
+}
+.MediaWiki-logo {
+    background-position: 0 -47px;
+    width: 42px;
+    height: 42px;
+}
+.Wikisourse-logo {
+    background-position: 0 -328px;
+    width: 39px;
+    height: 39px;
+}
+.Wikispecies-logo {
+    background-position: 0 -367px;
+    width: 42px;
+    height: 42px;
+}
+.Meta-Wiki-logo {
+    background-position: 0 -89px;
+    width: 46px;
+    height: 37px;
+}
+.site-licence {
+    text-align: center;
+}
+.site-licence-text {
+    font-size: var(--sm);
+}
+#licence-link {
+    color: var(--blue);
+    margin-left: 8px;
+}
+#licence-link:hover {
+    text-decoration: underline;
+}
